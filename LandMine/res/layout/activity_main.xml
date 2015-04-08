@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_timerl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textDirection="firstStrong"
+            android:textStyle="bold" 
+            android:text="@string/_usetime"/>
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content" 
+            android:textDirection="firstStrong"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_landminleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textDirection="firstStrong"
+            android:textStyle="bold" 
+            android:text="@string/_landMine"/>
+        <TextView
+            android:id="@+id/tv_landmin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dip"
+            android:textDirection="firstStrong"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.ty.landmine.LandMineView
+        android:id="@+id/gl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="5dip"
+        android:layout_weight="1" >
+    </com.ty.landmine.LandMineView>
+
+</LinearLayout>
